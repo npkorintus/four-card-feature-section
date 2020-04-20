@@ -1,0 +1,162 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-white: white;
+  --color-hyperlink: hsl(228, 45%, 44%);
+  --font-weight-thin: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+html {
+  background-color: var(--color-very-light-gray);
+  color: var(--color-very-dark-blue);
+}
+
+header {
+  text-align: center;
+  margin: 56px 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  letter-spacing: 0.65px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-thin);
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.subheading {
+  margin: 10px auto;
+  max-width: 325px;
+}
+
+p, small {
+  font-weight: var(--font-weight-normal);
+  color: var(--color-grayish-blue);
+}
+
+.card {
+  background-color: var(--color-white);
+  font-size: 15px;
+  width: 244px;
+  height: 160px;
+  margin: 24px auto;
+  padding: 28px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 16px var(--color-grayish-blue);
+}
+
+.card-heading {
+  margin: 0;
+}
+
+.cyan-trim {
+  border-top: 4px solid var(--color-cyan);
+}
+
+.red-trim {
+  border-top: 4px solid var(--color-red);
+}
+
+.orange-trim {
+  border-top: 4px solid var(--color-orange);
+}
+
+.blue-trim {
+  border-top: 4px solid var(--color-blue);
+}
+
+.image-container {
+  text-align: right;
+  margin-top: 24px;
+}
+
+footer {
+  margin: 32px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-hyperlink);
+}
+
+@media only screen and (min-width: 1030px) {
+
+  header {
+    margin: 48px;
+  }
+
+  .subheading {
+    max-width: 550px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 90px 100px 100px 90px;
+    grid-gap: 36px;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0;
+    width: 276px;
+    height: 176px;
+  }
+
+  #supervisor {
+    grid-row: 2/3;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  #team-builder {
+    grid-row: 1/2;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  #karma {
+    grid-row: 3/4;
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  #calculator {
+    grid-row: 2/3;
+    grid-column: 3;
+    justify-self: center;
+  }
+
+  .image-container {
+    margin-top: 36px;
+  }
+
+  footer {
+    margin: 20px 0 0 0;
+  }
+}
